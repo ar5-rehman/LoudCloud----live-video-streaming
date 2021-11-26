@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserPackage.userFragments.UserMainScreenFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.LoudCloud.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:title="Stage"
+            style="@style/menuItemFont"
+            app:titleTextColor="@color/white"
+            app:popupTheme="@style/Theme.LoudCloud.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appBar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="230dp"
+            android:src="@drawable/logo"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/logo"
+            android:visibility="gone"
+            android:text="NO PERFORMERS ARE LIVE CURRENTLY"
+            android:fontFamily="@font/nexabold" />
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

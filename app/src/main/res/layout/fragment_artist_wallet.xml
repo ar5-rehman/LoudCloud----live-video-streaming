@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1CBCB">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.LoudCloud">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="LoudCloud Earnings"
+            style="@style/menuItemFont"
+            app:titleTextColor="@color/white"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.LoudCloud" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provide your Paypal account ID"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appBar"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nexabold"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Paypal ID"
+        android:visibility="gone"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:visibility="gone"
+        android:fontFamily="@font/nexabold"
+        android:layout_below="@+id/id"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/earningtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Earnings"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/appBar"
+        android:layout_marginTop="45dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nexabold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/earnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0$"
+        android:visibility="gone"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/appBar"
+        android:layout_marginTop="45dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nexabold"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/requestForMoneyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Request for funds"
+        android:fontFamily="@font/nexabold"
+        android:layout_below="@+id/earnings"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/paymentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/requestForMoneyBtn"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:textColor="#000000"
+        android:fontFamily="@font/nexabold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/pymentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/paymentText"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nexabold"
+        android:textSize="18sp"/>
+
+
+</RelativeLayout>

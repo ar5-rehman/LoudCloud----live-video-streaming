@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".login.ArtistRegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.LoudCloud.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.LoudCloud.AppBarOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/appBar"
+        android:layout_centerHorizontal="true"
+        android:text="Use Upper/Lower alphabets, digits or _ -"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:layout_below="@+id/textt"
+        android:hint="Artist Name"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_-"
+            android:inputType="textFilter"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="Email"
+        android:layout_below="@+id/userName"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userRegion"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="Region"
+        android:layout_below="@+id/userEmail"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userDob"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="Date Of Birth"
+        android:layout_below="@+id/userRegion"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/userGender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/userDob">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Male"/>
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_below="@+id/userGender"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/conpass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:layout_below="@+id/userPass"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conpass"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nexabold"
+        android:background="@drawable/rounded_buttons"
+        android:text="next" />
+
+</RelativeLayout>

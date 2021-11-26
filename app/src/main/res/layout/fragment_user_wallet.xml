@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ACA9A9">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.LoudCloud">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Wallet"
+            style="@style/menuItemFont"
+            app:titleTextColor="@color/white"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.LoudCloud" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/totalVotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/appBar"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/votes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Votes"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/totalVotes"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Votes?"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/votes"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/fiveVotesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5 votes for $5"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/text"
+        android:fontFamily="@font/nexabold"
+        android:background="@drawable/rounded_buttons"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/tenVotesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10 votes for $10"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/fiveVotesBtn"
+        android:fontFamily="@font/nexabold"
+        android:background="@drawable/rounded_buttons"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

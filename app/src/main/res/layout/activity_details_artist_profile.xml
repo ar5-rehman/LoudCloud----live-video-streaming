@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6A6969"
+    tools:context=".login.DetailsArtistProfile">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.LoudCloud.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.LoudCloud.AppBarOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userDescription"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="Description"
+        android:layout_below="@+id/appBar"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/socialLinks"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Social Links"
+        android:layout_below="@+id/userDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fbLink"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="Facebook social Link (Optional)"
+        android:layout_below="@+id/socialLinks"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textUri"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/youtubeLink"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="YouTube social Link (Optional)"
+        android:layout_below="@+id/fbLink"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textUri"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/instaLink"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="Instagram social Link (Optional)"
+        android:layout_below="@+id/youtubeLink"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/insta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textUri"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiktokLink"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="TikTok social Link (Optional)"
+        android:layout_below="@+id/instaLink"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiktok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textUri"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/livelinks"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:ems="10"
+        android:hint="Other links (Optional)"
+        android:layout_below="@+id/tiktokLink"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/links"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textMultiLine"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/livelinks"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nexabold"
+        android:background="@drawable/rounded_buttons"
+        android:text="next" />
+
+</RelativeLayout>

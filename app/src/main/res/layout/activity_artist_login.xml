@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".login.ArtistLoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.LoudCloud.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.LoudCloud.AppBarOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyle"
+        android:fitsSystemWindows="true"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:layout_below="@id/appBar"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userpass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_below="@+id/userEmail"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userpass"
+        android:layout_marginTop="30dp"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_weight="1.0"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/nexabold"
+            android:background="@drawable/rounded_buttons"
+            android:text="login" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_weight="1.0"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/nexabold"
+            android:background="@drawable/rounded_buttons"
+            android:text="sign up" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userForgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget password? click here."
+        android:textColor="#ffffff"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nexabold"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/refreshToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here, to resend email verification link!"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/userForgetPass"
+        android:fontFamily="@font/nexabold"
+        android:textSize="12sp"/>
+
+
+</RelativeLayout>

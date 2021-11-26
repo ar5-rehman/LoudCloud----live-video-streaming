@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "400995781702",
+    "project_id": "loudcloud-74c0a",
+    "storage_bucket": "loudcloud-74c0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400995781702:android:7488025dc8278570804e47",
+        "android_client_info": {
+          "package_name": "com.tech.loudcloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400995781702-s9k389bu72teo8bcnuptonmaa4ok23r4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.loudcloud",
+            "certificate_hash": "65d1f97c3a5dd0d4d99454d20e34fb6330cb485c"
+          }
+        },
+        {
+          "client_id": "400995781702-ej37hs4n4h3kkn6ef3ajih70i2gm6u6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt3WfYH7W3DeWW3AtdA1Ltzh3N95MoCZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400995781702-ej37hs4n4h3kkn6ef3ajih70i2gm6u6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

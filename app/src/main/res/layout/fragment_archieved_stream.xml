@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".UserPackage.userFragments.ArchievedStreamFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.LoudCloud">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.LoudCloud" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/videosRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/appBar"
+    />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: "
+        android:visibility="gone"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_premium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18sp"
+        android:text="subscribe"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nexabold"
+        android:background="@drawable/rounded_buttons"/>
+
+</RelativeLayout>

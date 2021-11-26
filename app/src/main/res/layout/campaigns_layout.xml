@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/artistPic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/artistNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artist Name"
+                android:layout_toRightOf="@id/artistPic"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nexabold"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/artistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artist Name"
+                android:layout_toRightOf="@id/artistPic"
+                android:layout_below="@+id/artistNameText"
+                android:layout_marginLeft="15dp"
+                android:textColor="#686768"
+                />
+
+            <TextView
+                android:id="@+id/alternativesongText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alternative Performance"
+                android:layout_below="@+id/songsList"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/nexabold"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/alternativeSongs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/alternativesongText"
+                android:textColor="#686768"
+                />
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_below="@+id/alternativeSongs"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nexabold"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/locationText"
+                android:layout_marginLeft="25dp"
+                android:textColor="#686768"
+                />
+
+            <TextView
+                android:id="@+id/alternativeLocationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alternative Location"
+                android:layout_below="@+id/location"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/nexabold"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/alternativeLocations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/alternativeLocationText"
+                android:textColor="#686768"
+                />
+
+            <TextView
+                android:id="@+id/votesNeededText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Needed Votes"
+                android:layout_below="@+id/alternativeLocations"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nexabold"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/votesNeeded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/votesNeededText"
+                android:layout_marginLeft="25dp"
+                android:textColor="#686768"
+                />
+
+            <TextView
+                android:id="@+id/votesEarnedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earned Votes"
+                android:layout_below="@+id/votesNeeded"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nexabold"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/votesEarned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/votesEarnedText"
+                android:layout_marginLeft="25dp"
+                android:textColor="#686768"
+                />
+
+            <TextView
+                android:id="@+id/songsListText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Performance"
+                android:layout_below="@+id/artistPic"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/nexabold"
+                />
+
+            <TextView
+                android:id="@+id/songsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/songsListText"
+                android:layout_marginLeft="25dp"
+                android:textColor="#686768"
+                />
+
+            <Button
+                android:id="@+id/castVoteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cast vote"
+                android:textSize="10sp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nexabold"
+                android:background="@drawable/rounded_buttons"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

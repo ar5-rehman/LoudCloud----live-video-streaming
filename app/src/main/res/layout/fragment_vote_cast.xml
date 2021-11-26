@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserPackage.userFragments.VoteCastFragment">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAST VOTES"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nexabold"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/performanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Performances"
+        android:fontFamily="@font/nexabold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/text"
+        android:textColor="#ffffff"
+        android:textSize="13sp"/>
+
+    <RadioGroup
+        android:id="@+id/performanceGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/performanceText">
+
+    <RadioButton
+        android:id="@+id/performanceOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nexabold"
+        android:text="PERFORMANCE  1"></RadioButton>
+
+        <TextView
+            android:id="@+id/performanceOneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdjbiabdi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nexabold"
+            android:textColor="#ffffff"
+            android:textSize="10sp"/>
+
+    <RadioButton
+        android:id="@+id/performanceTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nexabold"
+        android:text="PERFORMANCE  2"></RadioButton>
+
+        <TextView
+            android:id="@+id/performanceTwoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nexabold"
+            android:textColor="#ffffff"
+            android:textSize="10sp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locations"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nexabold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/performanceGroup"
+        android:textColor="#ffffff"
+        android:textSize="13sp"/>
+
+    <RadioGroup
+        android:id="@+id/locationGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationText">
+
+        <RadioButton
+            android:id="@+id/locationOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/nexabold"
+            android:text="LOCATION  1"></RadioButton>
+
+        <TextView
+            android:id="@+id/locationOneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdjbiabdi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nexabold"
+            android:textColor="#ffffff"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:id="@+id/locationTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/nexabold"
+            android:text="LOCATION  2"></RadioButton>
+
+        <TextView
+            android:id="@+id/locationTwoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdjbiabdi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nexabold"
+            android:textColor="#ffffff"
+            android:textSize="10sp"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/defaultGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationGroup">
+
+    <RadioButton
+        android:id="@+id/campaign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:checked="true"
+        android:fontFamily="@font/nexabold"
+        android:text="CAMPAIGN"></RadioButton>
+
+    <TextView
+        android:id="@+id/defaults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default options of the campaign!"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/nexabold"
+        android:textColor="#ffffff"
+        android:textSize="10sp"/>
+
+</RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/defaultGroup">
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_weight="1.0"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/nexabold"
+            android:background="@drawable/rounded_buttons"
+            android:text="NO" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_weight="1.0"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/nexabold"
+            android:background="@drawable/rounded_buttons"
+            android:text="YES" />
+
+    </LinearLayout>
+
+</RelativeLayout>
